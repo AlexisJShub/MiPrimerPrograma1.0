@@ -44,5 +44,21 @@ public class TextoController {
         boolean resultado = (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u');
         System.out.println(">> ¿Es vocal?: " + resultado);
     }
+    // 15. Extractor de Iniciales
+    public void extraerIniciales(Scanner scanner) {
+        System.out.print("Ingrese primer nombre: ");
+        String nombre = scanner.nextLine();
+        System.out.print("Ingrese primer apellido: ");
+        String apellido = scanner.nextLine();
+        if (!nombre.isEmpty() && !apellido.isEmpty()) {
+            String iniciales = "" + nombre.charAt(0) + apellido.charAt(0);
+            System.out.println(">> Iniciales: " + iniciales.toUpperCase());
+        } else {
+            System.out.println(">> Error: espacio vacíos.");
+        
+        }
+        
+    }
     
+
 }
