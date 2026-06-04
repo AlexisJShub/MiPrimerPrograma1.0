@@ -25,5 +25,14 @@ public class TextoController {
         System.out.println(">> La palabra '" + palabra + "' tiene " + palabra.length() + " letras.");
     }
     
+    // 13. Inversor de Texto
+    public void invertirTexto(Scanner scanner) {
+        System.out.print("Ingrese una palabra para invertir: ");
+        String palabra = scanner.nextLine();
+        String invertida = new StringBuilder(palabra).reverse().toString();
+        System.out.println(">> Resultado: " + invertida);
+    
+    
+    }
     
 }
