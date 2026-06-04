@@ -39,7 +39,7 @@ public class TextoController {
     public void esVocal(Scanner scanner) {
         System.out.print("Ingrese un carácter: ");
         char caracter = scanner.next().charAt(0);
-        scanner.nextLine(); // Limpiar el buffer
+        scanner.nextLine();
         char c = Character.toLowerCase(caracter);
         boolean resultado = (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u');
         System.out.println(">> ¿Es vocal?: " + resultado);
