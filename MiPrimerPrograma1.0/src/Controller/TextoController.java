@@ -69,5 +69,14 @@ public class TextoController {
         System.out.println(">> Resultado: " + texto.toUpperCase());
     }
     
-}
+    // 17. Conversor Binario 
+    public void conversorBinario(Scanner scanner) {
+        System.out.print("Ingrese un texto de 0 y 1: ");
+        String binario = scanner.nextLine();
+        String resultado = (binario.length() % 2 == 0) ? "Par" : "Impar";
+        System.out.println(">> La longitud es: " + resultado);
+        
+    }
    
+
+}
