@@ -78,5 +78,18 @@ public class TextoController {
         
     }
    
-
+// 18. Repetidor de Palabras
+    public void repetirPalabra(Scanner scanner) {
+        System.out.print("Ingrese una palabra: ");
+        String palabra = scanner.nextLine();
+        System.out.print("Ingrese la cantidad de repeticiones (N): ");
+        int n = scanner.nextInt();
+        scanner.nextLine();
+        System.out.print(">> Resultado: ");
+        for (int i = 0; i < n; i++) {
+            System.out.print(palabra + " ");
+        }
+        System.out.println(); 
+    }
+    
 }
