@@ -44,6 +44,7 @@ public class TextoController {
         boolean resultado = (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u');
         System.out.println(">> ¿Es vocal?: " + resultado);
     }
+    
     // 15. Extractor de Iniciales
     public void extraerIniciales(Scanner scanner) {
         System.out.print("Ingrese primer nombre: ");
@@ -57,8 +58,16 @@ public class TextoController {
             System.out.println(">> Error: espacio vacíos.");
         
         }
+  
         
     }
+        
+        // 16. Normalizador a Mayúsculas
+    public void normalizarMayus(Scanner scanner) {
+        System.out.print("Ingrese texto vareado: ");
+        String texto = scanner.nextLine();
+        System.out.println(">> Resultado: " + texto.toUpperCase());
+    }
     
-
 }
+   
