@@ -18,5 +18,12 @@ public class TextoController {
         
     }
     
+    // 12. Contador de Longitud
+    public void contarLetras(Scanner scanner) {
+        System.out.print("Ingrese una palabra: ");
+        String palabra = scanner.nextLine();
+        System.out.println(">> La palabra '" + palabra + "' tiene " + palabra.length() + " letras.");
+    }
+    
     
 }
