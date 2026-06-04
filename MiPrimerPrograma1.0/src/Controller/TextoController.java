@@ -100,5 +100,16 @@ public class TextoController {
         System.out.println(">> La contraseña es: " + estado);
     }
     
+    // 20. Generador de Email
+    public void generarEmail(Scanner scanner) {
+        System.out.print("Ingrese nombre: ");
+        String nombre = scanner.nextLine();
+        System.out.print("Ingrese apellido: ");
+        String apellido = scanner.nextLine();
+        System.out.print("Ingrese plataforma (ej: plataforma.com): ");
+        String dominio = scanner.nextLine();
+        String email = nombre.toLowerCase() + "." + apellido.toLowerCase() + "@" + dominio.toLowerCase();
+        System.out.println(">> Correo realizado y generando...: " + email);
+    }
     
 }
