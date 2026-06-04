@@ -92,4 +92,13 @@ public class TextoController {
         System.out.println(); 
     }
     
+    // 19. Validador de contraseña
+    public void validarContrasena(Scanner scanner) {
+        System.out.print("Ingrese una contraseña: ");
+        String password = scanner.nextLine();
+        String estado = (password.length() > 8) ? "Segura" : "Insegura";
+        System.out.println(">> La contraseña es: " + estado);
+    }
+    
+    
 }
